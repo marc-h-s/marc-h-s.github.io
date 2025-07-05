@@ -1,0 +1,80 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Arial", "Verdana", sans-serif;
+}
+#header {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+}
+#header .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+.description {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  color: black;
+  max-width: 600px;
+  text-align: left;
+  font-size: 20px;
+  text-shadow: 2px 2px rgb(237, 237, 237);
+}
+.description h1 {
+  margin-bottom: 50px;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 300px;
+  text-align: center;
+  background: #131313;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+#footer div {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  color: rgb(234, 234, 234);
+  font-size: 20px;
+  width: fit-content;
+  height: fit-content;
+  text-align: left;
+}
+#footer .quick-links {
+  position: absolute;
+  left: 35%;
+  font-size: 18px;
+}
+#footer .quick-links p {
+  font-size: 24px;
+}
+#footer .quick-links .website-links{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 24px;
+  font-size: 18px;
+}
+#footer .connect {
+  position: absolute;
+  left: 55%;
+  font-size: 24px;
+}
+#footer .connect .connect-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  margin-left: 24px;
+  font-size: 18px;
+}
