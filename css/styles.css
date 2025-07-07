@@ -1,22 +1,75 @@
 body {
   background-color: rgb(255, 255, 255);
   font-family: "Arial", "Verdana", sans-serif;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
 }
 #header {
-  max-width: 400px;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  text-align: justify;
   color: rgb(0, 0, 0);
   font-size: 20px;
-  font-weight: bold;
+  font-weight: bold
 }
 #header .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 60px;
+  gap: 30px;
+  margin-top: 80px;
   margin-bottom: 80px;
+}
+#header .nav a:visited {
+  text-decoration: none;
+  color: black;
+}
+#header .nav a:hover {
+  text-decoration: none;
+  color: black;
+}
+#footer {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 80px;
+  background: rgb(219, 169, 95);
+  color: rgb(0, 0, 0);
+}
+#footer div {
+  color: rgb(234, 234, 234);
+  font-size: 20px;
+  width: fit-content;
+  height: fit-content;
+  text-align: left;
+}
+#footer .quick-links {
+  margin-top: 30px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  left: 5%;
+  font-size: 22px;
+  font-weight: bold;
+}
+#footer .quick-links a:link {
+  text-decoration: none;
+  color: black;
+}
+#footer .quick-links a:visited {
+  text-decoration: none;
+  color: black;
+}
+#footer .connect-links {
+  margin-top: 22px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  right: 5%;
+  font-size: 18px;
 }
 .description {
   margin-left: auto;
@@ -31,50 +84,35 @@ body {
 .description h1 {
   margin-bottom: 50px;
 }
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  min-height: 300px;
-  text-align: center;
-  background: #131313;
-  color: rgb(0, 0, 0);
-  font-size: 30px;
+.site-wrap {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: calc(100vh - 263px);
 }
-#footer div {
-  margin-top: 2%;
-  margin-bottom: 1%;
-  color: rgb(234, 234, 234);
-  font-size: 20px;
+.site-wrap h1 {
   width: fit-content;
-  height: fit-content;
-  text-align: left;
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
 }
-#footer .quick-links {
-  position: absolute;
-  left: 35%;
-  font-size: 18px;
-}
-#footer .quick-links p {
-  font-size: 24px;
-}
-#footer .quick-links .website-links{
+.site-wrap .projects .project {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-left: 24px;
-  font-size: 18px;
+  flex-direction: row;
+  margin-bottom: 30px;
+  gap: 30px;
 }
-#footer .connect {
-  position: absolute;
-  left: 55%;
-  font-size: 24px;
+.site-wrap .projects .project .project-image {
+  width: 50%;
 }
-#footer .connect .connect-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: space-between;
-  margin-left: 24px;
-  font-size: 18px;
+.site-wrap .projects .project .project-image img {
+  object-fit: contain;
+  width: 100%;
+}
+.site-wrap .projects .project .project-description {
+  width: 40%;
+}
+.site-wrap .blogs .blog-post {
+  margin-bottom: 60px;
 }
